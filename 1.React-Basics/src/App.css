@@ -1,0 +1,321 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Container */
+.todo-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.todo-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input group */
+.todo-input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input */
+.todo-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.todo-input:focus {
+  border-color: #4f46e5;
+}
+
+/* Add button */
+.add-btn {
+  padding: 8px 14px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  background: #4338ca;
+}
+
+/* Todo list */
+
+.todo-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Todo text */
+.todo-text {
+  font-size: 20px;
+  width: 100%;
+  cursor: pointer;
+
+  padding: 5px;
+  transition: 0.2s;
+}
+
+.todo-text:hover {
+  color: #3227ff;
+}
+
+/* Completed */
+.completed {
+  text-decoration: line-through;
+  color: #ff0000;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* css for the counter container  */
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.counter-container h2 {
+  font-size: 30px;
+}
+
+.button {
+  font-size: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.minus {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.count-text {
+  font-size: 30px;
+}
+
+/* product  */
+/* Card container */
+.app-product-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Image wrapper */
+.product-image-wrapper {
+  background: #f9fafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-image {
+  max-width: 100%;
+  height: 300px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.01);
+}
+
+/* Info section */
+.product-info {
+  text-align: center;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Title */
+.product-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+/* Price */
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4f46e5;
+  margin: 0;
+}
+
+/* Button */
+.product-btn {
+  width: 100px;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* accordian 
+ */
+
+/* Container */
+.accordion {
+  width: 500px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Each item */
+.accordion-item {
+  border-radius: 10px;
+  margin-bottom: 12px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Title */
+.accordion-title {
+  margin: 0;
+  padding: 16px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background: #f3f4f6;
+  transition: background 0.3s ease;
+}
+
+.accordion-title:hover {
+  background: #e5e7eb;
+}
+
+/* Active title */
+.accordion-item.active .accordion-title {
+  background: #4f46e5;
+  color: white;
+}
+
+/* Content wrapper */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.35s ease,
+    padding 0.3s ease;
+  background: #ffffff;
+}
+
+/* Open state */
+.accordion-content.open {
+  max-height: 200px;
+  padding: 15px 20px;
+}
+
+/* Paragraph */
+.accordion-content p {
+  margin: 0;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* weather container  */
+
+.container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+  background: #14b1f8;
+  border-radius: 10px;
+  color: white;
+}
+
+input {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
