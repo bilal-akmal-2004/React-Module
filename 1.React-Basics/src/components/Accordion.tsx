@@ -5,9 +5,9 @@ type Item = {
   content: string;
 };
 
-function Accordion({ items }: { items: Item[] }) {
+function Accordion(props: { items: Item[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
+  const items = props.items
  return (
   <div className="accordion">
     {items.map((item, index) => (
