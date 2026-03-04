@@ -20,7 +20,7 @@ export const createFavoriteManager = () => {
   };
 
   const getFavorites = () => {
-    return [...favorites]; // return copy (important!)
+    return [...favorites]; 
   };
 
   const isFavorite = (id: string) => {

@@ -5,20 +5,18 @@ import RecipeList from "./components/RecipeList";
 import { favoriteManager } from "./utils/favoriteInstance";
 import Modal from "./components/Modal";
 
+
 function App() {
   const [showFavorites, setShowFavorites] = useState(false);
   
   const [favorites, setFavorites] = useState(
     favoriteManager.getFavorites()
   );
-
-
-
   const openFavorites = () => {
     setFavorites(favoriteManager.getFavorites());
     setShowFavorites(true);
   };
-
+  
   const removeFavorite = (id: string) => {
     favoriteManager.removeFavorite(id);
     setFavorites(favoriteManager.getFavorites());

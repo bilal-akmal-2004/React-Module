@@ -274,3 +274,18 @@ body {
 .remove-btn:hover {
   transform: scale(1.1);
 }
+
+/* recipe-buttom here */
+.recipe-button {
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+
+  transition: all 0.2s ease-in-out;
+  background: bisque;
+  padding: 7px;
+}
+
+.recipe-button:hover {
+  background: rgb(244, 204, 158);
+}
